@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Seat</title>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    background: 
+        linear-gradient(rgb(100, 17, 103), rgba(37, 116, 252, 0)), /* Adjust gradient colors and opacity */
+        url('./bus2.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+
+/* Navbar styling */
+.navbar {
+    background-color: #4e24a8 ;
+    background-color:#7664de ;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #4e24a8;
+    background-color: ;
+}
+
+/* Main content styling */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+/* Dashboard card styling */
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+
+    background:transparent;
+    color:#fff
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(1, 1, 5, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    left:0;
+    bottom:0;
+    color:;
+    
+
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color:#00bfff;
+    left:0;
+    bottom:0;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #4607cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+.main-content h2{
+    color:#000000;
+}
+.main-content p{
+    color:#000000;
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <h1><i><b> BOOK MY SEAT!</b></i></h1>
+        <div class="nav-links">
+            <a href="#manage-buses">Manage buses</a>
+            <a href="#manage-bookings">Manage Bookings</a>
+            <a href="#manage-users">Manage Users</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2>Welcome, Admin!</h2>
+        <p>Select an option from the navigation menu to manage the bus System.</p>
+
+        <div class="dashboard">
+            <div class="card" id="manage-bus">
+                <h3>Manage buses</h3>
+                <p>Add, update, or remove bus information.</p>
+                <a href="manage_bus">Go to Manage buses</a>
+            </div>
+            <div class="card" id="manage-bookings">
+                <h3>Manage Bookings</h3>
+                <p>View Or Cancel bookings.</p>
+                <a href="manage_bookings">Go to Manage Bookings</a>
+            </div>
+            <div class="card" id="manage-users">
+                <h3>Manage Users</h3>
+                <p>Manage user accounts </p>
+                <a href="manage_users">Go to Manage Users</a>
+            </div>
+            <div class="card" id="complaints">
+                <h3>Complaints</h3>
+                <p>Registered Complaints</p>
+                <a href="view_complaints">Go to Complaints</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
